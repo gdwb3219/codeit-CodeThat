@@ -41,7 +41,6 @@ function QuestionListPage() {
   const questions = getQuestions(initKeyword);
 
   const handleKeywordChange = (e) => setKeyword(e.target.value);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setSearchParams(keyword ? {keyword} : {})
